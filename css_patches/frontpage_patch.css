@@ -1,0 +1,311 @@
+#container-content {
+    width: unset;
+    margin-top: unset;
+    float: unset;
+    padding-bottom: 5rem;
+    display: block;
+}
+
+#menuicon {
+    font-size: 1.9em;
+    margin: unset;
+}
+
+#header {
+    height: 95px;
+}
+
+#main-tabs {
+    display: flex;
+    padding-top: 6px;
+    justify-content: space-between;
+    width: 50%;
+    clear: both;
+}
+
+.rc-mission {
+    padding: 0.7em 0 0.7em 0;
+    font-style: italic;
+    background-color: snow;
+}
+
+.button {
+    margin: unset;
+}
+
+.research-navigation {
+    margin-top: 0px;
+    margin-bottom: 20px;
+}
+
+.research-image {
+    margin: 0px;
+}
+
+.sarbutton {
+    margin-bottom: 20px;
+}
+
+.sar-announcement {
+    margin-bottom: 20px;   
+}
+
+.issue-research-box {
+    margin-bottom: 20px;
+}
+
+.content-research-footer {
+    padding-top: 0px;
+}
+
+.main-tab {
+    text-decoration: none;
+    font-size: 1.5em;
+    letter-spacing: 0.07em;
+    font-weight: 600;
+}
+
+.content-research-subtitle {
+    padding-bottom: 9px;
+}
+
+
+
+#container-main {
+    position: relative;
+    min-height: calc(100vh - 70px);
+
+}
+
+#header-search {
+    clear: right;
+}
+
+.about-links {
+    font-size: 11px;
+    padding-left: 8px;
+    text-decoration: none;
+}
+
+
+.content-research-footer {
+    position: unset;
+}
+
+
+#footer {
+    width: inherit;
+    position: absolute;
+    bottom: 0;
+    height: 5rem;            /* Footer height */
+    padding-bottom: 15px;
+  /* padding: inherit; */
+
+}
+
+/* #mission { */
+/*     width: 30%; */
+/*     line-height: 130%; */
+/*     color: #2e2e2e; */
+/*     display: block; */
+/*     margin-block-start: 1em; */
+/* } */
+
+
+#footer-content {
+    border-top: 1px solid #000;
+    padding-top: 5px;
+
+}
+
+#footer-content-lists {
+
+    display: flex;
+    justify-content: space-between;
+
+}
+    
+.footer-list li {
+    list-style: none;
+}
+
+.footer-list a {
+    text-decoration: none;
+}
+
+
+.icon {
+    display: none !important;
+}
+
+
+#activities {
+    column-count: 3;
+    column-gap: 100px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+}
+
+#menuicon {
+    float:right;
+}
+
+
+
+#register {
+    float:right;
+    margin: 0px;
+    min-width: 80px;
+    border: 0px;
+    text-transform: none;
+}
+
+a#register {
+    color: #999;
+}
+
+a#register:hover {
+    color: #000;
+}
+
+
+#login {
+    float:right;
+    margin: 0px;
+    min-width: 80px;
+    text-transform: none;
+}
+
+a#login {
+    color: #999;
+}
+
+a#login:hover {
+    color: #000;
+}
+
+.portal-button {
+    margin-left: 0;
+    margin-top: 5px;
+    display: block;
+}
+
+.portal-description {
+    margin-bottom: 40px;
+
+}
+
+
+.footer-list {
+    padding-inline-start: 0;
+}
+
+
+
+@media only screen and (max-width: 1050px) {
+
+    #header-title {
+	font-size: 21px;
+    }
+
+    #header {
+	height: unset;
+    }
+
+    #header-description {
+	font-size: 10px;
+    }
+
+    #header-search {
+	/* position: unset; */
+	/* top: unset; */
+	position: absolute;
+	right: 0;
+	top: 5em;
+	
+    }
+    .about-links {
+	text-align: right;
+	padding-left: unset;
+    }
+
+    #main-tabs {
+	display: block;
+	padding-top: unset;
+	justify-content: unset;
+	width: unset;
+    }
+
+    .main-tab {
+	display: block;
+	line-height: 1.75;
+    }
+
+    #activities {
+	display: block;
+	column-count: 1;
+    }
+    
+    .content-navigation {
+	top: unset;
+	margin-top: unset;
+	text-align: right;
+	position: unset;
+    }
+    
+    #menuicon {
+	float: unset;
+    }
+
+    #footer {
+	position: unset;
+    }
+
+    #footer-content  {
+	font-size: 14px;
+    }
+
+    
+    #footer-content a {
+    	font-size: 14px;
+    }
+
+    
+    #footer-content {
+	margin-bottom: 30px;
+    }
+
+    #footer-content-lists {
+	display: block;
+	line-height: 165%;
+    }
+
+    .footer-list {
+	padding-inline-start: 0;
+    }
+
+    #mission {
+	width: unset;
+    }
+
+    #abouthelp {
+	display:none;
+    }
+
+    #login {
+	position: absolute;
+	right: 0px;
+	top: 90px;
+    }
+
+    #register {
+	position: absolute;
+	right: 0px;
+	top: 125px;
+	border: solid 1px #999;
+    }
+    
+    
+}
+
