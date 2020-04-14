@@ -11,14 +11,20 @@
 
 
 .journals { /* Masonry container */
-  column-count: 2;
-  column-gap: 3em;
+  /* column-count: 2; */
+    column-gap: 10em;
+    row-gap: 5em;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  
 }
 
 
 .institutions { /* Masonry container */
-  column-count: 6;
-  column-gap: 3em;
+  /* column-count: 6; */
+    column-gap: 3em;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
 }
 
 .institution-preview { /* Masonry bricks or child elements */
@@ -28,7 +34,13 @@
 }
 
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 1030px) {
+    .journals {
+	column-gap: unset;
+	column-count: 2;
+	display: block;
+    }
+    
   .users, .institutions  {
     column-count: 3;      
   }
