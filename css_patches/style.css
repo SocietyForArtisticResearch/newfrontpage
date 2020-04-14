@@ -19,17 +19,24 @@
 .institutions { /* flex with wrap  */
     display: flex;
     flex-wrap: wrap;
+    
 }
 
 .institution-preview { /* flex 1 1 */
     flex: 1 1 160px;
-    margin: 1em 2em;
-  
+    margin: 1em 1em;
+    box-shadow: #f3f3f3 5px 5px 10px;
+    padding:1em;
 }
 
 .institution-preview:nth-child(even) {
     align-self: flex-end;
-    margin: 0 5em;
+    margin-top:100px;
+    box-shadow: #f0f0f0 0px 5px 5px;
+}
+
+.institution-preview:nth-child(odd) {
+    box-shadow: #f0f0f0 0px 5px 5px;
 }
 
 
