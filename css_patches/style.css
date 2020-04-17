@@ -13,6 +13,7 @@
 
 
 .journals { /* Masonry container */
+
     display: flex;
     flex-wrap: wrap;
 }
@@ -28,7 +29,6 @@
 .institutions { /* flex with wrap  */
     display: flex;
     flex-wrap: wrap;
-    
 }
 
 .institution-preview { /* flex 1 1 */
@@ -52,9 +52,21 @@
 }
 
 
+<<<<<<< HEAD
 @media only screen and (max-width: 900px) {
   .users  {
       margin: 1em 2em;
+=======
+@media only screen and (max-width: 1030px) {
+    .journals {
+	column-gap: unset;
+	column-count: 2;
+	display: block;
+    }
+    
+  .users, .institutions  {
+    column-count: 3;      
+>>>>>>> 23f0900194d2f6acd1d3a52c21f4245af33b7028
   }
 }
 
