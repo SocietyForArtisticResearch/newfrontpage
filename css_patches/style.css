@@ -1,18 +1,27 @@
 .users { /* Masonry container */
-  column-count: 5;
-  column-gap: 3em;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .user-preview { /* Masonry bricks or child elements */
-  display: inline-block;
-  margin: 0 0 2em;
-  width: 100%;
+    flex: 0 0 140px;
+    padding: 5px;
+    margin: 1em 1em;
+    border: 1px solid #f9f9f9;
+    box-shadow: #f3f3f3 5px 5px 10px;
 }
 
 
 .journals { /* Masonry container */
-  column-count: 2;
-  column-gap: 3em;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.journal-preview {
+    flex: 0 1 300px;
+    margin: 3em;
+    padding: 1.5em;
+    box-shadow: #f3f3f3 5px 5px 10px;
 }
 
 
@@ -23,45 +32,44 @@
 }
 
 .institution-preview { /* flex 1 1 */
-    flex: 1 1 160px;
-    margin: 1em 1em;
+    flex: 1 1 120px;
+    margin-left: 1em;
+    margin-right: 1em;
+    margin-top: auto;
+    margin-bottom:auto;
     box-shadow: #f3f3f3 5px 5px 10px;
     padding:1em;
 }
 
 .institution-preview:nth-child(even) {
-    align-self: flex-end;
-    margin-top:100px;
-    box-shadow: #f0f0f0 0px 5px 5px;
+    align-self:flex-end;
+    margin-top:60px; 
 }
 
 .institution-preview:nth-child(odd) {
-    box-shadow: #f0f0f0 0px 5px 5px;
-    margin-bottom:100px;
+    align-self:flex-start;
+    margin-bottom: 50px;
 }
 
 
 @media only screen and (max-width: 900px) {
-  .users, .institution-preview  {
+  .users  {
       margin: 1em 2em;
   }
 }
 
 
 @media only screen and (max-width: 700px) {
-  .users, .institutions  {
+  .users  {
     column-count: 2;      
   }
+
 }
 
 
 @media only screen and (max-width: 400px) {
   .users  {
     column-count: 1;      
-  }
-
-  .institutions  {
-    column-count: 2;      
   }
 }
 */
@@ -95,6 +103,7 @@
     text-transform: uppercase;
     font-family: 'PT Sans', sans-serif;
     letter-spacing: 1px;
+    text-decoration: none;
 }
 
 #check-users {

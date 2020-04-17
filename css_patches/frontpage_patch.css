@@ -140,7 +140,6 @@
 
 
 #activities {
-    column-count: 3;
     column-gap: 100px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
