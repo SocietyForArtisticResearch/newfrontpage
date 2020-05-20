@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+m<!DOCTYPE html>
 <!-- saved from url=(0052)file:///home/luc/Work/rc/newfrontpage/frontpage.html -->
 <html>
     <head>
@@ -19,7 +19,7 @@
 		    <a href="https://www.researchcatalogue.net/portal">Research Catalogue
 		    </a>
 		</h1>
-		<div id="abouthelp" style="float: right;">
+		<div style="float: right;">
 		    
 		    <a href="https://www.researchcatalogue.net/messenger" class="about-links" style="
 			     /* font-size: 1.5em; */
@@ -61,13 +61,9 @@
 		
 		<div class="content-navigation">
 
-		    <a id="login" class="button consult-research" style="display:inline-block;text-decoration:none" href="#" target="_blank">Log in
-		    </a>
 
-		    
-		    <a id="register" class="button consult-research" style="display:inline-block;text-decoration:none" href="#" target="_blank">Register
+		    <a id="menuicon"   href="https://www.researchcatalogue.net/admin">☰
 		    </a>
-
 
 		</div>
 
@@ -76,9 +72,14 @@
 
 	    <div id="container-content">
 
-		<div class="rc-mission">The Research Catalogue (RC) is a non-commercial, collaboration and publishing platform for artistic research provided by the <a href="https:/www.societyforartisticresearch">Society for Artistic Research</a>. The RC is free to use for artists and researchers. It serves also as a backbone for teaching purposes, student assessment, peer review workflows and research funding administration. It strives to be an open space for experimentation and exchange.
-</div>
-
+		<div class="rc-mission">The Research Catalogue (RC) is a
+		    collaboration and publishing platform for artistic
+		    research provided by the <a href="https://societyforartisticresearch.org">Society for Artistic
+		    Research</a>. The RC is free to use for artists
+		    and researchers. It serves as a backbone for
+		    educational assessment, publishing workflows and
+		    research funding administration. It strives to be
+		    an open space for experimentation and exchange.</div>
 		
 		<a name="activities">
 		</a>

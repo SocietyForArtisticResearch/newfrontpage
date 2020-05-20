@@ -57,6 +57,14 @@
   .users  {
       margin: 1em 2em;
   }
+
+  .institution-preview:nth-child(even) {
+      margin-top:0; 
+  }
+
+  .institution-preview:nth-child(odd) {
+      margin-bottom: 0;
+  }
 }
 
 
