@@ -207,6 +207,20 @@ a#login:hover {
     padding-inline-start: 0;
 }
 
+.hosting {
+    text-align:right;
+    color: #aaa;
+}
+
+.hosting * {
+    font-size:0.6rem;
+   
+}
+
+.hosting-logo {
+    margin: 0.4rem 0 0 0;
+}
+
 
 
 @media only screen and (max-width: 1050px) {
