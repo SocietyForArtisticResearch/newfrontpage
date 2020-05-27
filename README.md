@@ -1,32 +1,36 @@
-# RC Front Page Redesign
+# RC landing page redesign
 
 ## Motivation
 
-* make journals and institutions more prominent, easier to find
-* show sara announcements
-* organise other content links etc.. as footer lists
+* make journals and institutions easier to find.
+* show sara announcements on a more prominent place.
+* organise information pages in a more logical way.
 
 We have moved the content of the sidebar to the footer.
 The portals and journals now have dedicated overview pages instead of being listed on the frontpage.
+The user menu is stacked away under a 
 
 
 ## Structure
 
-The website consists of 3 sections:
-- HEADER
-- CONTENT 
-- FOOTER
+The redesigned landing page consists of 3 sections:
+- header
+- content 
+- footer
 
-The header and footer elements do not have a fixed position, they may be static.
+The header and footer elements do not have a fixeddfsdfdsfsd position, they may be static.
 
-### HEADER
+### Header
 
 contains
    - search
    - (advanced search) register/login
    - about & help
 
-### CONTENT
+when logged in the navigation menu is available through a 
+![profile icon]("image of profile icon"). The dropdown menu as it works on smaller screens should become the default.
+
+### Content
 
 Content contains four tab views:
 	* Home
@@ -55,7 +59,7 @@ Content contains four tab views:
 - This is a view wich showcases various users. There is an option to filter by interest (keywords)
 
    
-### FOOTER
+### Footer
 
 contains a list of info pages, contact info etc.. see the HTML examples.
 At the very bottom, there is a single line for our hosting partner from Sweden.

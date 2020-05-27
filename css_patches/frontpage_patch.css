@@ -12,14 +12,14 @@
 }
 
 #header {
-    height: 95px;
+    height: 119px;
 }
 
 #main-tabs {
     display: flex;
     padding-top: 6px;
     justify-content: space-between;
-    width: 50%;
+    width: 100%;
     clear: both;
 }
 
@@ -47,7 +47,7 @@
 }
 
 .sar-announcement {
-    margin-bottom: 20px;   
+    margin-bottom: 20px;
 }
 
 .issue-research-box {
@@ -97,9 +97,10 @@
     width: inherit;
     position: absolute;
     bottom: 0;
-    height: 5rem;            /* Footer height */
+    height: 5rem;
+    /* Footer height */
     padding-bottom: 15px;
-  /* padding: inherit; */
+    /* padding: inherit; */
 
 }
 
@@ -124,7 +125,7 @@
     justify-content: space-between;
 
 }
-    
+
 .footer-list li {
     list-style: none;
 }
@@ -147,12 +148,12 @@
 }
 
 #menuicon {
-    float:right;
+    float: right;
 }
 
 .profile-icon {
-    width: 25px;
-    height: 25px;
+    width: 50px;
+    height: 50px;
 }
 
 
@@ -160,7 +161,7 @@
 
 
 #register {
-    float:right;
+    float: right;
     margin: 0px;
     min-width: 80px;
     border: 0px;
@@ -177,7 +178,7 @@ a#register:hover {
 
 
 #login {
-    float:right;
+    float: right;
     margin: 0px;
     min-width: 80px;
     text-transform: none;
@@ -208,17 +209,44 @@ a#login:hover {
 }
 
 .hosting {
-    text-align:right;
+    text-align: right;
     color: #aaa;
 }
 
 .hosting * {
-    font-size:0.6rem;
-   
+    font-size: 0.6rem;
+
 }
 
 .hosting-logo {
     margin: 0.4rem 0 0 0;
+}
+
+#main-tabs {
+    display: flex;
+    padding-top: unset;
+    justify-content: unset;
+    width: 100%;
+    align-items: flex-end;
+    line-height: 1;
+}
+
+.main-tab {
+    display: block;
+    line-height: 1.75;
+    flex: 1 1 auto;
+}
+
+
+.content-navigation {
+    top: unset;
+    margin-top: unset;
+    text-align: right;
+    position: static;
+    margin-left: auto;
+    flex: 1 1;
+    margin-right: 0;
+    text-align: right;
 }
 
 
@@ -226,106 +254,99 @@ a#login:hover {
 @media only screen and (max-width: 1050px) {
 
     #header-title {
-	font-size: 21px;
+        font-size: 21px;
     }
 
     #header {
-	height: unset;
+        height: unset;
     }
 
     #header-description {
-	font-size: 10px;
+        font-size: 10px;
     }
 
     #header-search {
-	/* position: unset; */
-	/* top: unset; */
-	position: absolute;
-	right: 0;
-	top: 5em;
-	
+        /* position: unset; */
+        /* top: unset; */
+        position: absolute;
+        right: 0;
+        top: 5em;
+
     }
+
     .about-links {
-	text-align: right;
-	padding-left: unset;
-    }
-
-    #main-tabs {
-	display: block;
-	padding-top: unset;
-	justify-content: unset;
-	width: unset;
-    }
-
-    .main-tab {
-	display: block;
-	line-height: 1.75;
+        text-align: right;
+        padding-left: unset;
     }
 
     #activities {
-	display: block;
-	column-count: 1;
+        display: block;
+        column-count: 1;
     }
-    
-    .content-navigation {
-	top: unset;
-	margin-top: unset;
-	text-align: right;
-	position: unset;
+
+    #main-tabs {
+        display: flex;
+        padding-top: unset;
+        justify-content: unset;
+        width: 100%;
+        align-items: flex-end;
+        line-height: 1;
+        clear: both;
+        flex-wrap: wrap;
+        display: table;
     }
-    
+
     #menuicon {
-	float: unset;
+        float: unset;
     }
 
     #footer {
-	position: unset;
+        position: unset;
     }
 
-    #footer-content  {
-	font-size: 14px;
-    }
-
-    
-    #footer-content a {
-    	font-size: 14px;
-    }
-
-    
     #footer-content {
-	margin-bottom: 30px;
+        font-size: 14px;
+    }
+
+
+    #footer-content a {
+        font-size: 14px;
+    }
+
+
+    #footer-content {
+        margin-bottom: 30px;
     }
 
     #footer-content-lists {
-	display: block;
-	line-height: 165%;
+        display: block;
+        line-height: 165%;
     }
 
     .footer-list {
-	padding-inline-start: 0;
+        padding-inline-start: 0;
     }
 
     #mission {
-	width: unset;
+        width: unset;
     }
 
     #abouthelp {
-	display:none;
+        display: none;
     }
 
     #login {
-	position: absolute;
-	right: 0px;
-	top: 90px;
+        position: absolute;
+        right: 0px;
+        top: 90px;
     }
 
     #register {
-	position: absolute;
-	right: 0px;
-	top: 125px;
-	border: solid 1px #999;
+        position: absolute;
+        right: 0px;
+        top: 125px;
+        border: solid 1px #999;
     }
-    
-    
-}
 
+
+}
