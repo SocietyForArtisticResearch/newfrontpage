@@ -151,9 +151,10 @@
     float: right;
 }
 
-.profile-icon {
+.menu-icon {
     width: 50px;
     height: 50px;
+    position: relative;
 }
 
 
@@ -203,6 +204,9 @@ a#login:hover {
 
 }
 
+/* .left-aligned { */
+/*     text-align: left; */
+/* } */
 
 .footer-list {
     padding-inline-start: 0;
@@ -239,7 +243,7 @@ a#login:hover {
 
 
 .content-navigation {
-    top: unset;
+    /* top: unset;*/
     margin-top: unset;
     text-align: right;
     position: static;
@@ -247,18 +251,85 @@ a#login:hover {
     flex: 1 1;
     margin-right: 0;
     text-align: right;
+    position: absolute;
+    top: 0;
+}
+
+.styly-menu {
+    position: absolute;
+    top: 11em;
+    background-color: white;
+    right: 0;
+    line-height: 3.5em;
+    box-shadow: 4px 6px 13px 6px #00000026;
+    padding-right: 1em;
+    padding-left: 1em;
+    text-align: right;
+
+    
+}
+    
+.account-menu {
+    display: none;
+    text-align: right;
 }
 
 
+.page-menu {
+    display: none;
+    text-align: left;
+}
+
+
+.styly-menu ul {
+    list-style: none;
+    padding-inline-start: 0px;
+}
+
+.styly-menu ul li:hover {
+    color: black;
+
+}
+
+    .styly-menu li a {
+	text-decoration: none;
+	font-size: 1.75em;
+	letter-spacing: 0.07em;
+	font-weight: 600;
+
+    }
+
+
+#menuicon-pages {
+    display: none;
+}
 
 @media only screen and (max-width: 1050px) {
 
-    #header-title {
-        font-size: 21px;
+    #header-title a {
+        font-size: 18px;
     }
 
+    #header-title {
+	float: unset;
+	display: inline-block;
+	flex: 1 1 auto;
+	text-align: center;
+	align-self: center
+    }
+
+    .styly-menu {
+	top: 6em;
+    }
+
+
+    .page-menu {
+	left: 0;
+    }
+    
     #header {
         height: unset;
+	display: flex;
     }
 
     #header-description {
@@ -274,6 +345,11 @@ a#login:hover {
 
     }
 
+    .hide-on-mobile {
+	display: none;
+    }
+
+    
     .about-links {
         text-align: right;
         padding-left: unset;
@@ -284,21 +360,29 @@ a#login:hover {
         column-count: 1;
     }
 
-    #main-tabs {
-        display: flex;
-        padding-top: unset;
-        justify-content: unset;
-        width: 100%;
-        align-items: flex-end;
-        line-height: 1;
-        clear: both;
-        flex-wrap: wrap;
-        display: table;
-    }
+    /* #main-tabs { */
+    /*     display: flex; */
+    /*     padding-top: unset; */
+    /*     justify-content: unset; */
+    /*     width: 100%; */
+    /*     align-items: flex-end; */
+    /*     line-height: 1; */
+    /*     clear: both; */
+    /*     flex-wrap: wrap; */
+    /*     display: table; */
+    /* } */
 
     #menuicon {
         float: unset;
+	flex: 1 1 auto;
+	    
     }
+
+    #menuicon-pages {
+        display: inline-block;
+	flex: 1 1 auto;
+    }
+    
 
     #footer {
         position: unset;
@@ -347,6 +431,11 @@ a#login:hover {
         top: 125px;
         border: solid 1px #999;
     }
+
+    .main-tab {
+	display: none;
+    }
+    
 
 
 }
