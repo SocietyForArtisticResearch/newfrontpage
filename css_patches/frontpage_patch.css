@@ -1,4 +1,4 @@
-#container-content {
+X1#container-content {
     width: unset;
     margin-top: unset;
     float: unset;
@@ -215,7 +215,6 @@ a#login:hover {
 
 .hosting * {
     font-size: 0.6rem;
-
 }
 
 .hosting-logo {
@@ -311,6 +310,10 @@ a#login:hover {
 
     #footer-content a {
         font-size: 14px;
+    }
+
+    #footer-content p.hosting a {
+        font-size: 0.6rem;
     }
 
 
