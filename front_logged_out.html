@@ -14,65 +14,94 @@
     </head>
     <body>
 	<div id="container-main">
-	    <div id="header">
+
+
+	    <div id="header-loggedout">
+
+
+		<a id="menuicon-pages">
+		    <svg class="menu-icon" title="Menu" onclick="toggleMenu('page-menu-list')" viewBox="0 0 16 16"><rect x="1" y="3" fill="#333" width="14" height="2"></rect><rect x="1" y="7" fill="#333" width="14" height="2"></rect><rect x="1" y="11" fill="#333" width="14" height="2"></rect></svg>
+		</a>
+
+
+		<div class="page-menu styly-menu left-aligned" id="page-menu-list">
+		    <ul>
+			<li><a>Home</a></li>
+			<li><a>Institutional Portals</a></li>
+			<li><a>Journals</a></li>
+			<li><a>Researchers</a></li>
+		    </ul>
+		</div>
+		
+
+		
 		<h1 id="header-title">
-		    <a href="https://www.researchcatalogue.net/portal">Research Catalogue
-		    </a>
+                    <a href="https://www.researchcatalogue.net/portal">Research Catalogue
+                    </a>
 		</h1>
-		<div id="abouthelp" style="float: right;">
-		    
-		    <a href="https://www.researchcatalogue.net/messenger" class="about-links" style="
+		<div style="float: right;" id="about-help" class="hide-on-mobile">
+
+                    <a href="https://www.researchcatalogue.net/messenger" class="about-links" style="
 			     /* font-size: 1.5em; */
 			     ">About
-		    </a>
-		    <a class="about-links" href="https://www.researchcatalogue.net/messenger">Help
-		    </a>
+                    </a>
+                    <a class="about-links" href="https://www.researchcatalogue.net/messenger">Help
+                    </a>
 		</div>
 
 
 
-		<h2 id="header-description">an international database for artistic research
+		<h2 id="header-description" class="hide-on-mobile">an international database for artistic research
 		</h2>
 
 
+
 		
-		<div id="header-search">
-		    <form action="https://www.researchcatalogue.net/portal/search-result" method="get">
+
+		<div id="header-search" class="hide-on-mobile">
+                    <form action="https://www.researchcatalogue.net/portal/search-result" method="get">
 			<input id="header-search-input" data-autocomplete="1" data-autocomplete-options="{&quot;url&quot;:&quot;/portal/search&quot;,&quot;property&quot;:&quot;title&quot;}" placeholder="Search" name="fulltext" type="input" value="" class="ui-autocomplete-input" autocomplete="nope">
 			<br>
-		    </form>
-		    <a id="header-search-advanced" href="https://www.researchcatalogue.net/portal/advanced-search" onclick="advancedSearchDialog(&#39;&#39;);return false">advanced search
-		    </a>
+                    </form>
+                    <a id="header-search-advanced" href="https://www.researchcatalogue.net/portal/advanced-search" onclick="advancedSearchDialog(&#39;&#39;);return false">advanced search
+                    </a>
+
+		</div>
+
+		<!-- <div id="main-tabs"> -->
+
+
+		<div class="desktop-menu">
+		    
+		    <div id="main-tabs" class="with-top-padding">
+			<a class="main-tab" href="#">Home
+			</a>
+			<a class="main-tab" href="#">Institutional Portals
+			</a>
+			<a class="main-tab" href="#">Journals
+			</a>
+			<a class="main-tab" href="#">Researchers
+			</a>
+
+			<div class="login-section">
+			    <button class="button">login</button>
+			    <button class="button">register</button>
+			</div>
+
+			
+		    </div>
+
+
+
 		    
 		</div>
 
-		<div id="main-tabs">
-		    <a class="main-tab" href="#">Home
-		    </a>
-		    <a class="main-tab" href="#">Institutional Portals
-		    </a>
-		    <a class="main-tab" href="#">Journals
-		    </a>
-		    <a class="main-tab" href="#">Researchers
-		    </a>
-		</div>
-
-		
-		
-		<div class="content-navigation">
-
-		    <a id="login" class="button consult-research" style="display:inline-block;text-decoration:none" href="#" target="_blank">Log in
-		    </a>
-
-		    
-		    <a id="register" class="button consult-research" style="display:inline-block;text-decoration:none" href="#" target="_blank">Register
-		    </a>
 
 
-		</div>
 
 
-	    </div>
+
+            </div>
 
 	    <div id="container-content">
 

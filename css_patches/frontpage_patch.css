@@ -15,12 +15,41 @@
     height: 119px;
 }
 
+#header-loggedout {
+    padding-bottom: 1em;
+    border-bottom: 1px solid #000;
+}
+
+
+.notification .badge {
+  position: absolute;
+  top: 96px;
+  right: -10px;
+  padding: 5px 5px;
+  border-radius: 50%;
+  background: red;
+  color: white;
+  font-size: 0.6em;
+  width: 10px;
+  height: 10px;
+  text-align: center;
+  font-weight: 700;
+}
+
 #main-tabs {
     display: flex;
-    padding-top: 6px;
-    justify-content: space-between;
     width: 100%;
     clear: both;
+    display: flex;
+    /* padding-top: unset; */
+    justify-content: unset;
+    width: 100%;
+    align-items: flex-end;
+    line-height: 1;
+}
+
+.with-top-padding {
+    padding-top: 1em;
 }
 
 .rc-mission {
@@ -226,14 +255,6 @@ a#login:hover {
     margin: 0.4rem 0 0 0;
 }
 
-#main-tabs {
-    display: flex;
-    padding-top: unset;
-    justify-content: unset;
-    width: 100%;
-    align-items: flex-end;
-    line-height: 1;
-}
 
 .main-tab {
     display: block;
@@ -291,14 +312,18 @@ a#login:hover {
 
 }
 
-    .styly-menu li a {
-	text-decoration: none;
-	font-size: 1.75em;
-	letter-spacing: 0.07em;
-	font-weight: 600;
+.styly-menu li a {
+    text-decoration: none;
+    font-size: 1.5em;
+    letter-spacing: 0.07em;
+    font-weight: 600;    
+}
 
-    }
 
+.unread-number {
+    color: red;
+    font-weight: 700;
+}
 
 #menuicon-pages {
     display: none;
@@ -314,7 +339,6 @@ a#login:hover {
 	float: unset;
 	display: inline-block;
 	flex: 1 1 auto;
-	text-align: center;
 	align-self: center
     }
 
@@ -437,5 +461,8 @@ a#login:hover {
     }
     
 
+    .notification .badge {
+	top: 33px;
+    }
 
 }
