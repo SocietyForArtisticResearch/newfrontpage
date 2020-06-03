@@ -1,14 +1,15 @@
 .users { /* Masonry container */
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .user-preview { /* Masonry bricks or child elements */
     flex: 0 0 140px;
-    padding: 5px;
-    margin: 1em 1em;
-    border: 1px solid #f9f9f9;
     box-shadow: #f3f3f3 5px 5px 10px;
+    padding: 13px;
+    margin-bottom: 1em;
+    border: 1px solid #000000;
 }
 
 
@@ -54,9 +55,8 @@
 
 
 @media only screen and (max-width: 900px) {
-  .users  {
-      margin: 1em 2em;
-  }
+
+    
 
   .institution-preview:nth-child(even) {
       margin-top:0; 
@@ -65,23 +65,26 @@
   .institution-preview:nth-child(odd) {
       margin-bottom: 0;
   }
+
+  .filters * {
+      margin: 0.5em 0;
+  }
+  
 }
 
 
 @media only screen and (max-width: 700px) {
-  .users  {
-    column-count: 2;      
-  }
+
+    .user-preview {
+	flex: unset;
+	width: 100%;
+    }
+
 
 }
 
 
-@media only screen and (max-width: 400px) {
-  .users  {
-    column-count: 1;      
-  }
-}
-*/
+
 
 #interests {
     width: 250px;

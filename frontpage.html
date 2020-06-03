@@ -87,29 +87,35 @@
 		
 		
 
-		<a id="menuicon"><img src="img/profile_metro.svg" class="menu-icon" title="Account" onclick="toggleMenu('account-menu')">
-		</a>
-		
-		<div class="account-menu styly-menu" id="account-menu">
-		    <ul>
-			<li><a>Users</a></li>
-			<li><a>Portals</a></li>
-			<li><a>Issues</a></li>
-			<li><a>Expositions</a></li>
-			<li><a>Connection Requests</a></li>
-			<li><a>Reviewing</a></li>
-			<li><a>Developments</a></li>
-		    </ul>
-		    <hr class="menu-separator">
-		    <ul>
-			<li><a>My Profile</a></li>
-			<li><a>Messages</a></li>
-			<li><a>Feeds</a></li>
-			<li><a>Settings</a></li>
-			<li class="logout-menu-item"><a>Logout</a></li>
-		    </ul>
+		    <div id="menuicon" class="notification"><img src="img/profile_metro.svg" class="menu-icon" title="Account" onclick="toggleMenu('account-menu')">
+			<div class="badge">3</div>
+		    </div>
+		    
+		    <div class="account-menu styly-menu " id="account-menu">
+			<ul>
+			    <li><a>Users</a></li>
+			    <li><a>Portals</a></li>
+			    <li><a>Issues</a></li>
+			    <li><a>Expositions</a></li>
+			    <li><a>Connection Requests</a></li>
+			    <li><a>Reviewing</a></li>
+			    <li><a>Developments</a></li>
+			</ul>
+			<hr class="menu-separator">
+			<ul>
+			    <li><a>My Profile</a></li>
+			    <li><a>Messages <span class="unread-number">(3)</span></a></li>
+			    <li><a>Feeds</a></li>
+			    <li><a>Settings</a></li>
+			</ul>
+			<hr class="menu-separator">
+			<ul>
+			    <li class="logout-menu-item"><a>Logout</a></li>
+			</ul>
+		    </div>
 
-		</div>
+
+		
 		</div>
 
 		<!-- </div> -->
