@@ -65,6 +65,11 @@
   .institution-preview:nth-child(odd) {
       margin-bottom: 0;
   }
+
+  .filters * {
+      margin: 0.5em 0;
+  }
+  
 }
 
 
