@@ -1,4 +1,4 @@
-X1#container-content {
+#container-content {
     width: unset;
     margin-top: unset;
     float: unset;
@@ -123,6 +123,7 @@ X1#container-content {
 
 
 #footer {
+    clear:both;
     width: inherit;
     position: absolute;
     bottom: 0;
